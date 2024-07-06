@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {  /* el asterisco dice que se cambia todo el formato*/
+    padding: 0;
+    margin: 0;
+}
+
+/*p {
+    margin: 10px;
+    border: 2px solid black;  //encerro en el cuadro el texto del parrafo//
+    padding: 5px;
+ }*/
+
+body {
+    background-color:rgb(5, 5, 5); /*color de fondo*/
+    color: rgb(250, 247, 247); /*color letras*/
+    height: 100vh; /*v significa veuw port y la h es higt de tamaño*/
+    box-sizing: border-box;
+}
+
+/*strong {
+    color: aqua;
+}*/
+
+.titulo-destaque{   /*con el punto al inicio lo mandamos a llamar del index*/
+    color:#22D4FD;
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    margin: 10% 15%;
+    justify-content: space-between;
+}
+
+.presentacion__contenido{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*tamaño de los espacios entre filas y columnas*/
+}
+
+.presentacion_contenido_titulo{
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.presentacion_contenido_texto{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.presentacion_enlaces{
+    display: flex; /*flex es un contenedor o caja de contenido*/
+    justify-content: space-between;
+}
+
+.presentacion_enlaces_link{
+    width: 280px; /*tamaño de fuente*/
+    background-color: #22D4FD; /*color de fuente*/
+    text-align: center;  /*centrar */
+    padding: 21.5px 0; /*el primer valor es el vertical, el segundo es horazontal*/
+    border-radius: 16px; /*para redondear el boton*/
+    font-family: "Montserrat", sans-serif; /*tipo de letra*/
+    font-size: 24px; /*tamaño de la letra*/
+    font-weight: 600; /*anchura de la letra*/
+    text-decoration: none; /*decoracion de texto*/
+    color: #000000; /*color de letra*/
+}
